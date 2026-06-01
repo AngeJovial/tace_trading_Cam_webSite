@@ -1,0 +1,104 @@
+
+
+.contact{
+    padding: 70px 10%;
+}
+
+/*les titres*/
+.titre{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titre h1{
+    font-size: 42px;
+    color: #0887d0;
+    margin-bottom: 25px;
+    margin-top: 75px;
+}
+
+.titre p{
+    color: #555;
+    font-size: 18px;
+}
+
+/*conteneur*/
+.Conteneur{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/*les infos de l'entreprises*/
+.Informations{
+    flex: 1;
+    min-width: 200px;
+    background-color: #0664e8;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.info-box{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.info-box h3{
+    margin-bottom: 10px;
+    color: rgb(4, 241, 245);
+}
+
+/*pour le formulaire*/
+.form{
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.form h2{
+    margin-bottom: 25px;
+    color: #0d3b2e;
+}
+
+/*pour les input*/
+.input{
+    margin-bottom: 20px;
+}
+
+.input, .select{
+
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.textarea{
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    resize: none;
+    height: 140px;
+    border: 1px solid #ccc;
+}
+
+/* Hover */
+button:hover{
+    background-color: #060d6b;
+    color: white;
+    transition: 0.5s;
+}
+
+/*responsive*/
+@media(max-width:900px){
+
+    .Conteneur{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,119 @@
+/* hero */
+
+.services-hero{
+
+    height: 70vh;
+    background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/services.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+    color: white;
+}
+
+/*contenu hero*/
+.services-hero-content{
+
+    max-width: 800px;
+}
+
+/*titre hero*/
+.services-hero-content h1{
+
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+/*texte hero*/
+.services-hero-content p{
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/*services*/
+.services{
+
+    background-color: #f5f5f5;
+}
+
+/*grid*/
+
+.services-grid{
+
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+
+/*card*/
+.service-card{
+
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+/*hover*/
+.service-card:hover{
+
+    transform: translateY(-10px);
+}
+
+/*icon*/
+.service-icon{
+
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/*titre*/
+.service-card h3{
+
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/*texte*/
+.service-card p{
+
+    line-height: 1.8;
+}
+
+/*cta*/
+.services-cta{
+
+    text-align: center;
+    background-color: white;
+}
+
+/*texte cta*/
+.services-cta p{
+
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* reponsive */
+@media screen and (max-width:768px){
+
+    .services-hero-content h1{
+
+        font-size: 40px;
+    }
+
+    .services-hero-content p{
+
+        font-size: 18px;
+    }
+
+}
