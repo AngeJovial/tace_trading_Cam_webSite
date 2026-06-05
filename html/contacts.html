@@ -8,17 +8,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact | TACE TRADING CAMEROUN</title>
+        <link rel="icon" type="image/jpeg" href="../logo.jpeg">
     </head>
+
+
+<!--Preloader-->
+    <script>
+            window.addEventListener("load", () => {
+
+            const preloader = document.getElementById("preloader");
+            preloader.style.opacity = "0";
+            setTimeout(() => {
+
+                preloader.style.display = "none";
+
+            }, 5000);
+
+        });
+
+    </script>
+
 
     <body>
 
+        <div id="preloader">
+            <img src="../logo.jpeg" alt="Logo TACE Trading" class="loader-logo">
+        </div>
+
         <header>
 
-            <h1 class="logo">
+            <!-- logo -->
+            <div class="brand">
+                <a href="../index.html"><img src="../logo.jpeg" alt="Logo TACE Trading" class="logo"></a>
 
-                <a href="../index.html"> TACE TRADING </a>
+                <div class="brand-text">
+                    <h1>TACE TRADING</h1>
+                    <p>CAMEROUN</p>
+                </div>
 
-            </h1>
+            </div>
 
             <!--menu button-->
             <div class="button"></div>
@@ -84,7 +112,6 @@
                     <div class="info-box">
 
                         <h3>Téléphones</h3>
-
                         <p>
                             +237 681 31 61 12<br>
                             +237 693 67 31 44
@@ -96,7 +123,6 @@
                     <div class="info-box">
 
                         <h3>Email</h3>
-
                         <p>
                             alainpatrickwaha@gmail.com
                         </p>
@@ -110,7 +136,7 @@
 
                     <h2>Envoyer un message</h2>
 
-                    <form action="https://formsubmit.co/langejovial@gmail.com"
+                    <form action="https://formsubmit.co/contact@iacameroun.com"
                         method="POST">
 
                         <input type="hidden"

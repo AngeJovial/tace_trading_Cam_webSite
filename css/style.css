@@ -41,22 +41,51 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     background-color: rgba(7,100,181,0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
-/*logo*/
-.logo a{
+/*LOGO*/
+/*.logo a{
     color: var(--white-color);
     text-decoration: none;
     font-size: 32px;
     font-weight: bold;
+}*/
+/* Logo + texte */
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:60px;
+    height:80px;
+    object-fit:contain;
+}
+
+.brand-text h1{
+    margin:0;
+    color:white;
+    font-size:28px;
+    font-weight:700;
+    line-height:1;
+}
+
+.brand-text p{
+    margin:5px 0 0 0;
+    color:#f5c542;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
 /*menu*/
@@ -108,7 +137,7 @@ header{
 /*titre hero*/
 .contenu-hero h1{
 
-    margin-top: 25px;
+    margin-top: 60px;
     font-size: 60px;
     margin-bottom: 25px;
     line-height: 1.2;
@@ -421,6 +450,41 @@ footer{
 
     .contenu-hero h1{
         font-size: 30px;
+    }
+
+}
+
+
+/* PRELOADER */
+
+#preloader{
+    position: fixed;
+    inset: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 5s ease;
+}
+
+/* LOGO */
+.loader-logo{
+    width: 150px;
+    animation: pulse 1.5s infinite;
+}
+
+/* ANIMATION */
+@keyframes pulse{
+
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
     }
 
 }

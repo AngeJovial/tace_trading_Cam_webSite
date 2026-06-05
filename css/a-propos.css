@@ -3,7 +3,7 @@
 .about-hero{
     height: 70vh;
     background-image:
-    linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/about.jpg");
+    linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../ressources/1.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

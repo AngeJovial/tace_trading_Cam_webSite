@@ -1,4 +1,7 @@
 
+*{
+    box-sizing: border-box;
+}
 
 .contact{
     padding: 70px 10%;
@@ -25,14 +28,14 @@
 /*conteneur*/
 .Conteneur{
     display: flex;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 /*les infos de l'entreprises*/
 .Informations{
     flex: 1;
-    min-width: 200px;
+    /*max-width: 500px;*/
     background-color: #0664e8;
     color: white;
     padding: 50px;
@@ -86,6 +89,10 @@
     height: 140px;
     border: 1px solid #ccc;
 }
+.Informations, .form{
+    width: 100%;
+    max-width: 100%;
+}
 
 /* Hover */
 button:hover{
@@ -95,10 +102,41 @@ button:hover{
 }
 
 /*responsive*/
-@media(max-width:900px){
+@media screen and (max-width: 900px){
 
     .Conteneur{
         flex-direction: column;
+        padding: 20px;
     }
 
+    .Informations,
+    .form{
+        width: 100%;
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .Informations h2{
+        font-size: 20px;
+    }
+
+    .titre h1{
+        font-size: 30px;
+    }
+
+    .info-box{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 625px){
+
+    .Informations,
+    .form{
+        padding: 15px;
+    }
+
+    .titre h1{
+        font-size: 24px;
+    }
 }

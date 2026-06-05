@@ -8,18 +8,46 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/services.css">
         <title>Nos Services | TACE TRADING CAMEROUN</title>
+        <link rel="icon" type="image/jpeg" href="../logo.jpeg">
 
     </head>
 
+
+<!--Preloader-->
+    <script>
+            window.addEventListener("load", () => {
+
+            const preloader = document.getElementById("preloader");
+            preloader.style.opacity = "0";
+            setTimeout(() => {
+
+                preloader.style.display = "none";
+
+            }, 5000);
+
+        });
+
+    </script>
+
+
     <body>
+
+        <div id="preloader">
+            <img src="../logo.jpeg" alt="Logo TACE Trading" class="loader-logo">
+        </div>
 
         <header>
 
-            <h1 class="logo">
+            <!-- logo -->
+            <div class="brand">
+                <a href="../index.html"><img src="../logo.jpeg" alt="Logo TACE Trading" class="logo"></a>
 
-                <a href="../index.html"> TACE TRADING </a>
+                <div class="brand-text">
+                    <h1>TACE TRADING</h1>
+                    <p>CAMEROUN</p>
+                </div>
 
-            </h1>
+            </div>
 
             <!--menu button-->
             <div class="button"></div>
