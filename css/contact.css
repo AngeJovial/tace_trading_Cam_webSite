@@ -52,6 +52,10 @@
     color: rgb(4, 241, 245);
 }
 
+.info-box a{
+    color: aliceblue;
+}
+
 /*pour le formulaire*/
 .form{
     flex: 1;
@@ -127,6 +131,7 @@ button:hover{
     .info-box{
         font-size: 20px;
     }
+    
 }
 
 @media screen and (max-width: 625px){
