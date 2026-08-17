@@ -98,12 +98,14 @@
                     <!-- Adresse -->
                     <div class="info-box">
 
-                        <h3>Adresse</h3>
+                        <h3>📍 Adresse</h3>
 
                         <p>
-                            151 Avenue Foch,<br>
-                            Centre-Ville, Yaoundé,<br>
-                            Cameroun
+                            <a href="https://www.google.com/maps/search/?api=1&query=151+Avenue+Foch+Centre-ville+Yaound%C3%A9+Cameroun" target="_blank" rel="noopener">
+                                151 Avenue Foch,<br>
+                                Centre-Ville, Yaoundé,<br>
+                                Cameroun
+                            </a>
                         </p>
 
                     </div>
@@ -111,10 +113,10 @@
                     <!-- Téléphones -->
                     <div class="info-box">
 
-                        <h3>Téléphones</h3>
+                        <h3>☎️ Téléphones</h3>
                         <p>
-                            +237 681 31 61 12<br>
-                            +237 693 67 31 44
+                            <a href="tel:+237681316112">+237 681 31 61 12</a><br>
+                            <a href="tel:+237693673144">+237 693 67 31 44</a>
                         </p>
 
                     </div>
@@ -122,10 +124,38 @@
                     <!-- Email -->
                     <div class="info-box">
 
-                        <h3>Email</h3>
+                        <h3>✉️ Email</h3>
                         <p>
-                            alainpatrickwaha@gmail.com
+                            <a href="mailto:alainpatrickwaha@gmail.com">alainpatrickwaha@gmail.com</a>
                         </p>
+
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="info-box">
+
+                        <h3>💬 WhatsApp</h3>
+                        <p>
+                            <a href="https://wa.me/237681316112?text=Bonjour%2C%20je%20souhaite%20plus%20d%27informations" target="_blank" rel="noopener">
+                                Discuter directement sur WhatsApp
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <!-- Carte -->
+                    <div class="info-box map-box">
+
+                        <h3>Nous trouver</h3>
+                        <iframe
+                            src="https://www.google.com/maps?q=151+Avenue+Foch+Centre-ville+Yaound%C3%A9+Cameroun&output=embed"
+                            width="100%"
+                            height="220"
+                            style="border:0; border-radius:8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
 
                     </div>
 
@@ -136,8 +166,12 @@
 
                     <h2>Envoyer un message</h2>
 
-                    <form action="https://formsubmit.co/contact@iacameroun.com"
+                    <form action="https://formsubmit.co/contact@tacetrading.com"
                         method="POST">
+
+                        <!-- ⚠️ Adresse à confirmer : le fichier original pointait vers
+                             contact@iacameroun.com, qui ne correspond à aucune adresse
+                             utilisée ailleurs sur le site. Remplacez par la bonne adresse. -->
 
                         <input type="hidden"
                             name="_captcha"
@@ -150,6 +184,13 @@
                         <input type="hidden"
                             name="_template"
                             value="table">
+
+                        <!-- Anti-spam (champ invisible, doit rester vide) -->
+                        <input type="text"
+                            name="_honey"
+                            style="display:none"
+                            tabindex="-1"
+                            autocomplete="off">
 
                         <div class="input">
                             <input type="text"
@@ -173,7 +214,7 @@
                         <!--choix-->
                         <div class="select">
 
-                            <select required>
+                            <select name="objet" required>
                                 <option value="">
                                     Objet de la demande
                                 </option>
@@ -197,8 +238,7 @@
                         <div class="textarea">
                             <textarea name="message"
                                 placeholder="Votre message..."
-                                required>
-                        </textarea>
+                                required></textarea>
                         </div>
 
                         <button type="submit">
@@ -214,6 +254,48 @@
             </div>
 
         </section>
+
+        <!--footer-->
+
+        <footer>
+
+            <div class="footer-content">
+
+                <h2>
+
+                    TACE TRADING CAMEROUN
+
+                </h2>
+
+                <p>
+
+                    151 Avenue Foch, Centre-ville, Yaoundé
+
+                </p>
+
+                <p>
+
+                    +237 681 31 61 12
+
+                </p>
+
+                <p>
+
+                    contact@tacetrading.com
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    © 2026 TACE TRADING CAMEROUN — Tous droits réservés.
+
+                </p>
+
+            </div>
+
+        </footer>
 
          <!--scrpts pour le menu-->
 

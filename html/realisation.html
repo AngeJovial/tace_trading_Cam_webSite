@@ -10,6 +10,77 @@
         <title>Réalisations | TACE TRADING CAMEROUN</title>
         <link rel="icon" type="image/jpeg" href="../logo.jpeg">
 
+        <!-- STYLE TEMPORAIRE POUR LES GALERIES JEC -->
+        <!-- A déplacer dans realisation.css, ou à adapter aux classes déjà existantes -->
+        <style>
+
+            .jec-section {
+                padding: 60px 0;
+            }
+
+            .jec-section:nth-of-type(even) {
+                background-color: #f7f7f7;
+            }
+
+            .jec-section h3 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: blue;
+            }
+
+            .jec-intro {
+                max-width: 720px;
+                margin: 0 auto 35px;
+                text-align: center;
+                color: #555;
+            }
+
+            .gallery-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            .gallery-item {
+                margin: 0;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            }
+
+            .gallery-item img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.3s ease;
+            }
+
+            .gallery-item:hover img {
+                transform: scale(1.05);
+            }
+
+            .gallery-item figcaption {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+                color: #444;
+                background: #fff;
+            }
+
+            @media (max-width: 768px) {
+                .gallery-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 480px) {
+                .gallery-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+        </style>
+
     </head>
 
 
@@ -84,8 +155,7 @@
                 <p>
 
                     Découvrez quelques projets stratégiques réalisés par
-                    TACE TRADING CAMEROUN dans les domaines sportifs,
-                    économiques et institutionnels.
+                    TACE TRADING CAMEROUN dans les économiques et institutionnels.
 
                 </p>
 
@@ -103,77 +173,111 @@
 
                     <h2>Nos Projets Majeurs</h2>
 
-                    <!-- PROJECT GRID -->
-                    <div class="project-grid">
+                </div>
 
-                        <!-- PROJECT 1 -->
-                        <div class="project-card">
+            </section>
 
-                            <img src="../ressources/4.jpg" alt="Complexe sportif de Dimako">
+            <!--JOURNEES ECONOMIQUES CAMEROUNAISES-->
+            <section class="jec-section">
 
-                            <div class="project-content">
+                <div class="container">
 
-                                <h3> Complexe Sportif de Dimako </h3>
+                    <h3>Journées Économiques Camerounaises</h3>
 
-                                <p>
+                    <p class="jec-intro">
 
-                                    Réalisation d’un complexe sportif moderne destiné
-                                    au développement des activités sportives locales.
+                        7e édition des Journées Économiques Camerounaises (avril 2024),
+                        tenue à Brasília et Ilhéus (Bahia), consacrée au renforcement
+                        de la production et de la transformation du cacao entre le
+                        Cameroun et le Brésil.
 
-                                </p>
+                    </p>
 
-                            </div>
+                    <div class="gallery-grid">
 
-                        </div>
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2024/09_photo_famille_diner_tapis_rouge.jpeg" alt="Photo de famille à la Résidence de l'Ambassadeur du Cameroun au Brésil">
+                            <figcaption>Dîner à la Résidence de l'Ambassadeur du Cameroun au Brésil</figcaption>
+                        </figure>
 
-                        <!-- PROJECT 2 -->
-                        <div class="project-card">
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2024/11_photo_famille_ceplac.jpeg" alt="Séance de travail avec la Directrice Générale du CEPLAC">
+                            <figcaption>Séance de travail avec la Directrice Générale du CEPLAC</figcaption>
+                        </figure>
 
-                            <img src="../ressources/5.jpg" alt="Lac municipal de Foumban">
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2024/14_maire_ilheus_et_hotes.jpeg" alt="Le Maire de la Ville d'Ilhéus et ses hôtes">
+                            <figcaption>Rencontre avec le Maire de la Ville d'Ilhéus</figcaption>
+                        </figure>
 
-                            <div class="project-content">
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2024/23_ambiance_samba.jpeg" alt="Accueil en musique Samba de la délégation Camerounaise">
+                            <figcaption>Accueil en musique, tambours et Samba</figcaption>
+                        </figure>
 
-                                <h3>
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2024/24_visite_champs_cacao_ceplac.jpeg" alt="Visite des champs de cacao du CEPLAC">
+                            <figcaption>Visite des champs de cacao du CEPLAC</figcaption>
+                        </figure>
 
-                                    Aménagement Touristique du Lac Municipal de Foumban
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2024/29_photo_famille_entrepot_sechage.jpeg" alt="Entrepôt de séchage des fèves de cacao sous serre">
+                            <figcaption>Entrepôt de séchage des fèves de cacao sous serre</figcaption>
+                        </figure>
 
-                                </h3>
+                    </div>
 
-                                <p>
+                </div>
 
-                                    Projet d’aménagement touristique et sportif
-                                    visant à moderniser les infrastructures locales.
+            </section>
 
-                                </p>
+            <!--JOURNEES UNIVERSITAIRES CAMEROUN BRESIL-->
+            <section class="jec-section">
 
-                            </div>
+                <div class="container">
 
-                        </div>
+                    <h3>Journées Universitaires Cameroun – Brésil</h3>
 
-                        <!-- PROJECT 3 -->
-                        <div class="project-card">
+                    <p class="jec-intro">
 
-                            <img src="../ressources/3.jpg" alt="Journées économiques">
+                        Mission de coopération académique et scientifique tenue du
+                        02 au 10 mai 2026 à Brasília et Belém, réunissant institutions
+                        d'enseignement supérieur et acteurs du monde agricole
+                        camerounais et brésiliens.
 
-                            <div class="project-content">
+                    </p>
 
-                                <h3>
+                    <div class="gallery-grid">
 
-                                    Journées Économiques Cameroun – Brésil
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2026/04_seance_travail_rectrice_unb.jpeg" alt="Séance de travail avec la Rectrice de l'Université de Brasília">
+                            <figcaption>Séance de travail avec la Rectrice de l'Université de Brasília</figcaption>
+                        </figure>
 
-                                </h3>
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2026/06_ceremonie_honoris_causa_a.jpeg" alt="Cérémonie de remise de doctorat Honoris Causa">
+                            <figcaption>Cérémonie de remise de doctorat Honoris Causa</figcaption>
+                        </figure>
 
-                                <p>
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2026/09_recteur_recoit_presents_a.jpeg" alt="Le Recteur reçoit des présents de la délégation Camerounaise">
+                            <figcaption>Le Recteur reçoit des présents de la délégation Camerounaise</figcaption>
+                        </figure>
 
-                                    Organisation et promotion de la 9e édition des
-                                    Journées Économiques pour renforcer les échanges
-                                    internationaux.
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2026/11_salle_classe_ifpa_a.jpeg" alt="Accueil de la délégation par les étudiants de l'IFPA">
+                            <figcaption>Accueil chaleureux par les étudiants de l'IFPA</figcaption>
+                        </figure>
 
-                                </p>
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2026/14_visite_emprapa_a.jpeg" alt="Visite des installations de l'EMPRABA à Belém">
+                            <figcaption>Visite des installations de l'EMPRABA à Belém</figcaption>
+                        </figure>
 
-                            </div>
-
-                        </div>
+                        <figure class="gallery-item">
+                            <img src="../ressources/jec-2026/03_couverture_c.jpeg" alt="Délégation Camerounaise en séance institutionnelle">
+                            <figcaption>La délégation Camerounaise en séance institutionnelle</figcaption>
+                        </figure>
 
                     </div>
 
